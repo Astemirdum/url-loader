@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  url-loader:
+    container_name: url-loader
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: astdockerid1/url-loader:latest
+    restart: unless-stopped
+    environment:
+      - VAL=lolkek
+    volumes:
+      - ./test/:/app/
+
