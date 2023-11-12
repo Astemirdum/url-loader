@@ -61,7 +61,5 @@ jobs:
         run: go mod verify
 
       - name: build
-        run: |
-          mkdir bin
-          make build
+        run: make build
 

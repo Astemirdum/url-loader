@@ -23,10 +23,10 @@ func Test_loadURL(t *testing.T) {
 		{
 			name: "ok",
 			args: args{
-				u: "https://yandex.ru",
+				u: "https://google.com",
 			},
 			want: loadURLResult{
-				u:    "https://yandex.ru",
+				u:    "https://google.com",
 				size: 10_000,
 				ltv:  786641875,
 			},
